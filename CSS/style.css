@@ -117,7 +117,6 @@ body, html {
     padding: 2rem;
     text-align: center;
     border:  .1px solid rgba(245, 222, 179, 0.301);
-        margin-top: 70px;
     
 }
 .page {
@@ -133,7 +132,6 @@ body, html {
   background-color: #faebf0b8;
   margin-bottom: 5%;
   border-radius: 15px;
-      margin-top: 70px;
 }
 
 .main-title {
@@ -338,7 +336,6 @@ body, html {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-          margin-top: 70px !important;
     }
 
     .swiper-slide img {
@@ -359,7 +356,7 @@ body, html {
     .final-message{
     max-width: 600px;
     padding: 2rem;
-    background-color: #f9f9f9ce !important;
+    background-color: #f9f9f9af !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     font-size: 1rem;
     line-height: 1.6;
