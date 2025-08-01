@@ -117,6 +117,7 @@ body, html {
     padding: 2rem;
     text-align: center;
     border:  .1px solid rgba(245, 222, 179, 0.301);
+        margin-top: 70px;
     
 }
 .page {
@@ -132,6 +133,7 @@ body, html {
   background-color: #faebf0b8;
   margin-bottom: 5%;
   border-radius: 15px;
+      margin-top: 70px;
 }
 
 .main-title {
@@ -336,6 +338,7 @@ body, html {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+          margin-top: 70px !important;
     }
 
     .swiper-slide img {
