@@ -1,0 +1,10 @@
+/* Extra small devices (phones, portrait) */
+@media (max-width: 480px) {
+  /* CSS here */
+  #page1 h1{
+
+    font: optional;t
+
+  }
+}
+

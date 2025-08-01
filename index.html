@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Safsoufy</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!-- Swiper CSS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Bitcount:wght@100..900&family=Yeseva+One&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+    <div id="quiz-gate" class="quiz-screen2">
+        <h1 class="title">Hi Birthday Boy!</h1>
+        <p class="subtitle" style="color: rgb(175, 175, 175);">Answer this one correctly to proceed to the next page</p>
+        <h2 class="question">On what day of the week was our first date?</h2>
+        <div class="options">
+            <button onclick="checkAnswer(this, false)">Thursday</button>
+            <button onclick="checkAnswer(this, false)">Sunday</button>
+            <button onclick="checkAnswer(this, true)">Friday</button>
+            <button onclick="checkAnswer(this, false)">Tuesday</button>
+        </div>
+        <div id="feedback" class="feedback hidden">
+            <p id="feedback-text"></p>
+        </div>
+    </div>
+
+    <div id="main-content" class="quiz-screen hidden">
+        <div id="floating-hearts" class="floating-hearts"></div>
+<!-- Page 1: Intro -->
+  <div class="page active" id="page1">
+    <h1 style="font-size: 70px !important;">Just wanted to say I love you first</h1>
+    <p class="main-subtitle" style="color: rgb(175, 175, 175);">Thank you for being in my life 💖</p>
+    <button class="next-btn" onclick="goToPage(2)">Click Here if you Love me too</button>
+  </div>
+
+  <!-- Page 2: Birthday Message Title -->
+  <div class="page" id="page2">
+    <div class="main-card">
+      <div class="header">
+        <h1 class="main-title" style="font-size: 80px !important;">I LOVE YOU LOADS!</h1>
+        <p class="main-subtitle">You're about to see <b style="font-size: 40px; font-weight: 900; color: #d17b8f;">29</b> memories from our beautiful days together!</p>
+        <P class="main-subtitle" style="color: #d17b8f; font-weight: 900 !important; font-size: 25px;">Ready?</P>
+      </div>
+      <button class="next-btn margin-0" onclick="goToPage(3)">Yes, bring on the memories </button>
+    </div>
+  </div>
+
+  <!-- Page 3: Swiper Gallery -->
+  <div class="page" style="position: relative;" id="page3">
+    <div class="swiper">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide">
+          <img src="IMGS/1.jpg" alt="Memory 1" />
+          <p class="caption">The moment my heart spoke… and yours answered, without even knowing.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="IMGS/2.jpg" alt="Memory 2" />
+          <p class="caption">our very first frame.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="IMGS/3.jpg" alt="Memory 3" />
+          <p class="caption">Eh raayek ya mama?</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="IMGS/4.jpg" alt="Memory 4" />
+          <p class="caption">The first time your hand found my waist… and my heart didn’t stand a chance.</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/5.jpg" alt="Memory 4" />
+          <p class="caption">Between floors, between heartbeats, wrapped in you, for the first time!</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/6.jpg" alt="Memory 4" />
+          <p class="caption">First flower Bouquet you got me was so adorable. But have you seen the man who brought it?</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/7.jpg" alt="Memory 4" />
+          <p class="caption">While other guys text girls ‘wyd’ my real one handed me a letter. Keep it going baby, i loved receiving this from you💖</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/8.jpg" alt="Memory 4" />
+          <p class="caption">Got me the cutest instax ever and this was the first picture to ever take with it.</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/9.jpg" alt="Memory 4" />
+          <p class="caption">Second date, felt so close to you</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="IMGS/11.jpg" alt="Memory 4" />
+          <p class="caption">Jumped into a train and got to see my baby💖</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="IMGS/12.jpg" alt="Memory 4" />
+          <p class="caption">First time taking the metro together</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="IMGS/13.jpg" alt="Memory 4" />
+          <p class="caption">First time in Shubra💖</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="IMGS/14.jpg" alt="Memory 4" />
+          <p class="caption">Aren't you adorable?</p>
+        </div>
+
+        <div class="swiper-slide">
+  <img src="IMGS/10.jpg" alt="Memory 4" />
+  <p class="caption">I remember trying to sleep on my way back, recalling everything happened, especially the heartwarming call we made before the train gets to move.
+    Felt so warm with you around💖
+  </p>
+</div>
+        <div class="swiper-slide">
+          <img src="IMGS/15.jpg" alt="Memory 4" />
+          <p class="caption">4th date, 1st Museum date, looking soulmaty</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/16.jpg" alt="Memory 4" />
+          <p class="caption">This was the most artisic photo that i've ever taken in my whole life</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/17.jpg" alt="Memory 4" />
+          <p class="caption">Cool one gone wrong, still watching a fading flower behind the glass💖</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/18.jpg" alt="Memory 4" />
+          <p class="caption">The day love went public, and mama brought dessert 💖</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/19.jpg" alt="Memory 4" />
+          <p class="caption">I get goosebmps everytime i recall this memory, may god bless you for me💖</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/20.jpg" alt="Memory 4" />
+          <p class="caption">Didn't miss the "everytime photo" tho</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/21.jpg" alt="Memory 4" />
+          <p class="caption">Unluckily, the last photo we took before our big day, still grateful we got to take it💖</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/22.jpg" alt="Memory 4" />
+          <p class="caption">Had to start ASAP...</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/23.jpg" alt="Memory 4" />
+          <p class="caption">Getting ready for the big dayyy</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/24.jpg" alt="Memory 4" />
+          <p class="caption">My elegant man was getting ready too💖 *kisses*</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/25.jpg" alt="Memory 4" />
+          <p class="caption">Until we eventually got here! 💖</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/26.jpg" alt="Memory 4" />
+          <p class="caption">You can guess the winner</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/27.jpg" alt="Memory 4" />
+          <p class="caption">First Halal date</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/28.jpg" alt="Memory 4" />
+          <p class="caption">Never Mind it wasn't😂</p>
+        </div>
+                <div class="swiper-slide">
+          <img src="IMGS/29.jpg" alt="Memory 4" />
+          <p class="caption">And finally, the only thing that fuels my energy to wait for you to come back! That was the first time for me to sleep on your bed, and till now, and it'll always be my favorite part of the month</p>
+        </div>
+<!-- Swiper Wrapper -->
+<div class="swiper-slide">
+  <p style="margin-top:50%; color: wheat;">Now that you've swiped through all the 29 memories, I wanna tell you something..</p>
+  <button class="next-btn" onclick="goToPage(4)">Tell me something</button>
+</div>
+</div>
+  <div class="swiper-button-prev" style="color: white"></div>
+  <div class="swiper-button-next" style="color: white"></div></div>
+  </div>
+<!-- Other pages... -->
+
+<!-- Final Page (initially hidden) -->
+<div class="page" style="margin: 0 auto;" id="page4">
+  <div class="final-message" style="z-index: 99999999;">
+    <p>
+      My dearest,<br><br>
+      On this special day, I want to remind you how incredibly grateful I am for every moment with you.
+      From the little coffee shop to our late-night talks, every memory is stitched into my heart.<br><br>
+      You are <strong>my favorite person</strong>, my home, and my forever.
+      Happy Birthday, my love. Here's to many more shared memories.<br><br>
+      With all the love in the world,<br>
+      Your Aya
+    </p>
+  </div>
+  </div>
+
+
+</body>
+</html>
