@@ -353,17 +353,46 @@ body, html {
       color: #555;
     }
 
-    .final-message {
-      max-width: 60%;
+    .final-message{
+    max-width: 600px;
     padding: 2rem;
-    background-color: #fff4f4b7 !important;
-    border-radius: 1rem;
+    background-color: #f9f9f9ce !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     font-size: 1rem;
     line-height: 1.6;
     color: #444;
     margin: 0 auto;
-    }
+    border-radius: 0px !important;
+}
+
+
+    .final-message {
+    max-height: 70vh; /* Keep the height relative to the viewport */
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #d17b8f #f4f4f4; /* For Firefox */
+  }
+
+  /* For Webkit browsers (Chrome, Edge, Safari) */
+  .final-message::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .final-message::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 10px;
+  }
+
+  .final-message::-webkit-scrollbar-thumb {
+    background-color: #d17b8f;
+    border-radius: 10px;
+    border: 2px solid #f4f4f4;
+  }
+
+  .final-message::-webkit-scrollbar-thumb:hover {
+    background-color: #b66578;
+  }
 
     .final-message p {
       margin: 0;
