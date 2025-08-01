@@ -28,8 +28,8 @@ function checkAnswer(button, isCorrect) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    loop: false, // set to true if you want infinite looping
-    speed: 600,  // increase speed if you want it to feel faster
+    loop: false, 
+    speed: 600,  
   });
 
   let currentPhotoIndex = 0;
@@ -108,3 +108,14 @@ function goToPage(pageNum) {
   const target = document.getElementById('page' + pageNum);
   if (target) target.classList.add('active');
 }
+
+  let isPlaying = false;
+  function playLoveSong() {
+    const audio = document.getElementById('loveSong');
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    isPlaying = !isPlaying;
+  }

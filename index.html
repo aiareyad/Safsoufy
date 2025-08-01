@@ -23,6 +23,10 @@
 
 </head>
 <body class="body">
+
+<audio id="loveSong" src="03.Khodne_Bain_Edayk.mp3"></audio>
+
+
     <div id="quiz-gate" class="quiz-screen2">
         <h1 class="title">Hi Birthday Boy!</h1>
         <p class="subtitle" style="color: rgb(175, 175, 175);">Answer this one correctly to proceed to the next page</p>
@@ -30,7 +34,7 @@
         <div class="options">
             <button onclick="checkAnswer(this, false)">Thursday</button>
             <button onclick="checkAnswer(this, false)">Sunday</button>
-            <button onclick="checkAnswer(this, true)">Friday</button>
+            <button onclick="checkAnswer(this, true), playLoveSong()">Friday</button>
             <button onclick="checkAnswer(this, false)">Tuesday</button>
         </div>
         <div id="feedback" class="feedback hidden">
