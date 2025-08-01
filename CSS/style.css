@@ -2,7 +2,8 @@
         
 body {
   font-family: 'Poppins', sans-serif;
-  background:url('IMGS/BG.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.714)),
+            url('/IMGS/BG.jpg') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -507,6 +508,19 @@ body, html {
 }
 
 @media (max-width: 480px) {
+
+  body {
+  font-family: 'Poppins', sans-serif;
+background: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.714)),
+            url('IMGS/BG.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  overflow-x: hidden;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+}
 
 .title {
     font-size: 29px;
