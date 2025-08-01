@@ -116,6 +116,7 @@ body, html {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     text-align: center;
+    border:  .1px solid rgba(245, 222, 179, 0.301);
     
 }
 .page {
@@ -266,7 +267,7 @@ body, html {
         .floating-hearts span {
             position: absolute;
             display: block;
-            bottom: -20px;
+            bottom: -100px;
             width: 20px;
             height: 20px;
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff6b6b"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
@@ -403,6 +404,19 @@ body, html {
       background-color: #fff;
     }
 
+    body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.714)),
+            url('https://aiareyad.github.io/Safsoufy/IMGS/BG.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  overflow-x: hidden;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+}
+
     .page {
     display: none;
     max-width: 100%;
@@ -510,17 +524,9 @@ body, html {
 
 @media (max-width: 480px) {
 
-  body {
-  font-family: 'Poppins', sans-serif;
-background: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.714)),
-            url('IMGS/BG.jpg') center/cover no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #333;
-  overflow-x: hidden;
-  transition: opacity 1s ease-in;
-  opacity: 0;
+html, body{
+
+  min-height: 100vh;
 }
 
 .title {
@@ -542,6 +548,8 @@ background: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.714)),
 
       font-size: 33px !important;
 }
+
+
 
 .main-card {
     border-radius: 1rem;
@@ -613,5 +621,18 @@ background: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.714)),
     font-size: 2rem;
     line-height: 1.6;
     color: #444;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.714)),
+            url('https://aiareyad.github.io/Safsoufy/IMGS/BG.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  overflow-x: hidden;
+  transition: opacity 1s ease-in;
+  opacity: 0;
 }
 }
