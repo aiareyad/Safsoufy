@@ -565,6 +565,13 @@ html, body{
     font-family: "Bitcount", system-ui;
 }
 
+.subtitle {
+  color: #4b5563;
+  margin-top: 0 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
 .question {
     font-size: 16px;
     font-weight: 400;
